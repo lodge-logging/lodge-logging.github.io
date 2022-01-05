@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/lodge-logging.github.io/static/css/main.140a8e1c.chunk.css",
+    "main.js": "/lodge-logging.github.io/static/js/main.3c36534d.chunk.js",
+    "main.js.map": "/lodge-logging.github.io/static/js/main.3c36534d.chunk.js.map",
+    "runtime-main.js": "/lodge-logging.github.io/static/js/runtime-main.db889b0b.js",
+    "runtime-main.js.map": "/lodge-logging.github.io/static/js/runtime-main.db889b0b.js.map",
+    "static/js/2.7760054f.chunk.js": "/lodge-logging.github.io/static/js/2.7760054f.chunk.js",
+    "static/js/2.7760054f.chunk.js.map": "/lodge-logging.github.io/static/js/2.7760054f.chunk.js.map",
+    "index.html": "/lodge-logging.github.io/index.html",
+    "static/css/main.140a8e1c.chunk.css.map": "/lodge-logging.github.io/static/css/main.140a8e1c.chunk.css.map",
+    "static/js/2.7760054f.chunk.js.LICENSE.txt": "/lodge-logging.github.io/static/js/2.7760054f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/lodge-logging.github.io/static/media/Lodge_graphic_green.28510de6.svg",
+    "static/media/Lodge_graphic_mono_color.b0914d10.svg": "/lodge-logging.github.io/static/media/Lodge_graphic_mono_color.b0914d10.svg",
+    "static/media/email.21f403d1.svg": "/lodge-logging.github.io/static/media/email.21f403d1.svg",
+    "static/media/github.04be58c1.svg": "/lodge-logging.github.io/static/media/github.04be58c1.svg",
+    "static/media/github.2624d8dd.svg": "/lodge-logging.github.io/static/media/github.2624d8dd.svg",
+    "static/media/linkedin.36e3c5fe.svg": "/lodge-logging.github.io/static/media/linkedin.36e3c5fe.svg",
+    "static/media/logo_side.c6a949be.svg": "/lodge-logging.github.io/static/media/logo_side.c6a949be.svg",
+    "static/media/selfie.133d3930.jpg": "/lodge-logging.github.io/static/media/selfie.133d3930.jpg",
+    "static/media/website.da1ff378.svg": "/lodge-logging.github.io/static/media/website.da1ff378.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db889b0b.js",
+    "static/js/2.7760054f.chunk.js",
+    "static/css/main.140a8e1c.chunk.css",
+    "static/js/main.3c36534d.chunk.js"
+  ]
+}
