@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Biryani", sans-serif;
+}
+
+@layer base {
+  code {
+    @apply text-sm;
+    @apply py-1;
+    @apply px-1.5;
+    @apply bg-gray-100;
+    @apply rounded
+  }
+}
+
+@layer utilities {
+
+  .p-floating-logo {
+    padding: 0 0 0 25%;
+  }
+
+  .h-video {
+    height: calc(100vh - 4rem);
+  }
+
+  .max-h-video {
+    max-height: 304px;
+  }
+
+  .w-sm-side-nav {
+    width: 310px;
+  }
+
+  .w-lg-side-nav {
+    width: 500px;
+  }
+
+  .pl-nav {
+    padding-left: 400px;
+  }
+
+  .w-member {
+    width: calc(50% - 4rem);
+  }
+
+  .w-doc-nav {
+    width: 22%;
+  }
+
+  .bgImageFirst {
+    background-image: url(./images/logo/Lodge_graphic_color.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 30%;
+    background-position: calc(40% / 3) calc(50% + 2rem);
+  }
+
+  .bgImageSecond {
+    background-image: url(./images/logo/Lodge_graphic_green.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 30%;
+    background-position: calc(40% / 3) calc(50% + 2rem);
+  }
+
+  .bgImageThird {
+    background-image: url(./images/logo/Lodge_graphic_blue.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 30%;
+    background-position: calc(40% / 3) calc(50% + 2rem);
+  }
+}
