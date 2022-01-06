@@ -14,16 +14,16 @@ function TeamMember({ image, name, location, email, linkedin, github, website })
         </div>
         <ul className="bg-white-100 mx-auto mt-6 flex w-48 justify-between items-center">
           <li>
-            <a href={email}><img className="w-8" src={emailIcon} /></a>
+            <a href={email}><img className="w-8" src={emailIcon} alt="email icon" /></a>
           </li>
           <li>
-            <a href={linkedin}><img className="w-6" src={linkedinIcon} /></a>
+            <a href={linkedin}><img className="w-6" src={linkedinIcon} alt="linkedin icon" /></a>
           </li>
           <li>
-            <a href={github}><img className="w-8" src={githubIcon} /></a>
+            <a href={github}><img className="w-8" src={githubIcon} alt="github icon" /></a>
           </li>
           <li>
-            <a href={website}><img className="w-8" src={websiteIcon} /></a>
+            <a href={website}><img className="w-8" src={websiteIcon} alt="website icon" /></a>
           </li>
         </ul>
       </div>
