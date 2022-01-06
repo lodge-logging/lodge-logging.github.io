@@ -1,9 +1,13 @@
-import selfie from "../images/team/selfie.jpg";
+import regina from "../images/team/regina.png";
+import justin from "../images/team/justin.png";
+import sam from "../images/team/sam.png";
+// import rana from "../images/team/rana.png";
+
 import TeamMember from "./TeamMember";
 
 const teamMembers = [
   {
-    image: selfie,
+    image: regina,
     name: "Regina Donovan",
     location: "Atlanta, GA",
     email: "reginadonovan191@gmail.com",
@@ -12,7 +16,7 @@ const teamMembers = [
     website: ""
   },
   {
-    image: selfie,
+    image: justin,
     name: "Justin Lo",
     location: "Vancouver, BC",
     email: "justinkevinhl@gmail.com",
@@ -21,16 +25,16 @@ const teamMembers = [
     website: ""
   },
   {
-    image: selfie,
+    image: sam,
     name: "Sam Clark",
     location: "Dallas, TX",
     email: "clarksam19@gmail.com",
     linkedin: "https://www.linkedin.com/in/sam-clark-0aa74390",
     github: "https://github.com/clarksam19",
-    website: "",
+    website: "https://samclark.dev/",
   },
   {
-    image: selfie,
+    image: regina,
     name: "Rana Deeb",
     location: "San Francisco, CA",
     email: "ranadeeb92@gmail.com",
