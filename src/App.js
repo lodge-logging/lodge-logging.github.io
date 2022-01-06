@@ -1,17 +1,18 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainPage from "./components/MainPage";
-import Docs from "./components/Docs";
-import ErrorPage from "./components/ErrorPage";
+import Nav from "./components/Nav";
+import Landing from "./components/Landing";
+import CaseStudy from "./components/CaseStudy";
+import Presentation from "./components/Presentation";
+import OurTeam from "./components/OurTeam";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/docs" element={<Docs />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <Nav />
+      <Landing />
+      <CaseStudy />
+      <Presentation />
+      <OurTeam />
+    </div>
   );
 }
 
