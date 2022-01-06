@@ -1,4 +1,5 @@
 import { useState } from "react";
+import menuIcon from "../images/icons/menu.svg";
 import icon from "../images/logo/github.svg";
 import logo from "../images/logo/Lodge_graphic_mono_color.svg";
 
@@ -10,7 +11,7 @@ function Nav() {
     <header>
       <div id="header" className="z-50 items-center bg-white fixed border-b border-gray-200 h-20 w-full flex justify-between">
         <a href="/">
-          <img src={logo} alt="the Lodge logo" className="h-20 ml-8" />
+          <img src={logo} alt="the Lodge logo" className="h-20 ml-4" />
         </a>
         <nav className="hidden lg:flex bg-white h-full justify-between items-center text-center text-lg text-gray-500 font-medium">
           <a href="/#landing" className="mx-4">Start Here</a>
@@ -20,9 +21,7 @@ function Nav() {
           <a href="/docs" className="mx-4">Docs</a>
           <a href="https://github.com/lodge-logging/Lodge" className="mx-4 w-20"><img src={icon} className="w-full h-10" alt="The github logo" /></a>
         </nav>
-        <div className="lg:hidden block">
-          <button type="button" className={`${showMenu ? "bg-red-500" : "bg-green-300"} w-8 p-8 m-4`} onClick={() => setShowMenu(!showMenu)} />
-        </div>
+        <img src={menuIcon} alt="a dropdown menu icon" className="lg:hidden block w-8 h-8 mr-6" onClick={() => setShowMenu(!showMenu)} />
       </div>
       <div id="mobile-menu" className={`lg:hidden ${showMenu ? "translate-y-20" : "-translate-y-full"} z-0 bg-white fixed flex flex-col text-xl text-gray-800 w-full gap-1 transform transition duration-500 ease-in-out`}>
         <a href="/#landing" className={`${navItemStyle} mt-1`}>Start Here</a>
