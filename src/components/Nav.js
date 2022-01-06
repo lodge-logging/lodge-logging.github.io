@@ -18,7 +18,7 @@ function Nav() {
           <a href="/#case-study" className="mx-4">Case Study</a>
           <a href="/#presentation" className="mx-4">Presentation</a>
           <a href="/#our-team" className="mx-4">Our Team</a>
-          <a href="/docs" className="mx-4">Docs</a>
+          <a href="/lodge-docs" className="mx-4">Docs</a>
           <a href="https://github.com/lodge-logging/Lodge" className="mx-4 w-20"><img src={icon} className="w-full h-10" alt="The github logo" /></a>
         </nav>
         <img src={menuIcon} alt="a dropdown menu icon" className="lg:hidden block w-8 h-8 mr-6" onClick={() => setShowMenu(!showMenu)} />
@@ -28,7 +28,7 @@ function Nav() {
         <a href="/#case-study" className={navItemStyle}>Case Study</a>
         <a href="/#presentation" className={navItemStyle}>Presentation</a>
         <a href="/#our-team" className={navItemStyle}>Our Team</a>
-        <a href="/docs" className={navItemStyle}>Docs</a>
+        <a href="/lodge-docs" className={navItemStyle}>Docs</a>
         <a href="https://github.com/lodge-logging/Lodge" className={`${navItemStyle} mb-1`}><i className=""></i> GitHub</a>
       </div>
     </header>
