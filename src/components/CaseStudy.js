@@ -28,6 +28,7 @@ import elasticsearchCluster from "../images/diagrams/ES-cluster.png";
 import circularDependencies from "../images/diagrams/circular-dependencies.png";
 import dependencyStages from "../images/diagrams/dependency-stages.png";
 import zookeeperDependencies from "../images/diagrams/zookeeper-dependencies.png";
+import componentReview from "../images/diagrams/component-review.png";
 
 function CaseStudy() {
   const headerStyle = "text-3xl font-extrabold mt-14 mb-6";
@@ -41,7 +42,6 @@ function CaseStudy() {
   const imgStyle = "mx-auto my-8 rounded-lg";
   const linkStyle = "underline text-blue-500";
   // const quoteStyle = "border-l-4 border-grey-200 pl-4 italic text-raisin";
-  // const numlistTextStyle = "list-decimal list-inside leading-10";
 
   return (
     <div className="flex">
@@ -354,7 +354,7 @@ function CaseStudy() {
           <p className={paragraphStyle}>
             Here is a review of all the Lodge components: Filebeat for shipping logs to Lodge, Kafka for buffering the logs, Logstash for parsing, transforming, and indexing the logs, Elasticsearch and S3 for storing the logs, and the Lodge Dashboard for managing Kafka, re-indexing archived logs back into Elasticsearch from S3, and using Kibana, which is there to query and visualize the logs in Elasticsearch.
           </p>
-
+          <img src={componentReview} alt="component overview" className={`${imgStyle} max-w-4xl`} />
           <h2 id="section-6" className={headerStyle}>6. Desigining and Building Lodge</h2>
           <p className={paragraphStyle}>
             In this final section, we are going to cover three design decisions we made and an implementation challenge we faced when building Lodge. The design decisions include adding Kafka, Amazon S3, and a bastion host. The implementation challenge is the resolution of circular dependencies during the automation of Lodge’s deployment.
