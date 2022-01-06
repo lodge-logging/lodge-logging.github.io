@@ -1,7 +1,7 @@
 import regina from "../images/team/regina.png";
 import justin from "../images/team/justin.png";
 import sam from "../images/team/sam.png";
-// import rana from "../images/team/rana.png";
+import rana from "../images/team/rana.png";
 
 import TeamMember from "./TeamMember";
 
@@ -34,7 +34,7 @@ const teamMembers = [
     website: "https://samclark.dev/",
   },
   {
-    image: regina,
+    image: rana,
     name: "Rana Deeb",
     location: "San Francisco, CA",
     email: "ranadeeb92@gmail.com",
