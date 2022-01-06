@@ -66,23 +66,23 @@ h6 {
     background-image: url(./images/logo/Lodge_graphic_color.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 30%;
-    background-position: calc(40% / 3) calc(50% + 2rem);
+    background-size: 20%;
+    background-position: calc(50% / 3) calc(50% + 2rem);
   }
 
   .bgImageSecond {
-    background-image: url(./images/logo/Lodge_graphic_green.svg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 30%;
-    background-position: calc(40% / 3) calc(50% + 2rem);
-  }
-
-  .bgImageThird {
     background-image: url(./images/logo/Lodge_graphic_blue.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 30%;
-    background-position: calc(40% / 3) calc(50% + 2rem);
+    background-size: 20%;
+    background-position: calc(50% / 3) calc(50% + 2rem);
+  }
+
+  .bgImageThird {
+    background-image: url(./images/logo/Lodge_graphic_green.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 20%;
+    background-position: calc(50% / 3) calc(50% + 2rem);
   }
 }
