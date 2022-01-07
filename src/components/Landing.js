@@ -9,7 +9,7 @@ function Landing() {
         <div className="w-full xl:h-screen xl:flex">
           <div className="hidden bg-white xl:block bgImageFirst w-6/12 h-screen"></div>
           <img className="xl:hidden w-96 mx-auto mt-8" src={logo} alt=" The Lodge logo" />
-          <div className="text-center items-center justify-center bg-raisin xl:w-6/12 xl:flex xl:flex-col xl:h-screen">
+          <div className="text-center items-center justify-center bg-raisin pb-24 xl:pb-0 xl:w-6/12 xl:flex xl:flex-col xl:h-screen">
             <h1 className="hidden xl:block text-9xl font-extrabold mt-52">Lodge</h1>
             <p className="light-text text-gray-300 text-3xl leading-snug text-center mt-8 px-8 mx-auto max-w-xl">
               An open-source <span className="text-cyan font-medium">self-managed</span></p>
