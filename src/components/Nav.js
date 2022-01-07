@@ -1,11 +1,17 @@
 import { useState } from "react";
+import scrollToElement from "../scripts/scrollToElement";
 import menuIcon from "../images/icons/menu.svg";
 import icon from "../images/logo/github.svg";
 import logo from "../images/logo/Lodge_graphic_mono_color.svg";
 
 function Nav() {
+  const navItemStyle = "hover:bg-gray-100 hover:border-gray-300 active:bg-green-200 active:border-green-300 border-l-4 border-white py-2.5 pl-4 text-left";
   const [showMenu, setShowMenu] = useState(false);
-  const navItemStyle = "pl-4 hover:bg-gray-100 hover:border-gray-300 active:bg-green-200 active:border-green-300 border-l-4 border-white py-2.5";
+
+  const navigateTo = (elementId) => {
+    scrollToElement(elementId, -50);
+    setShowMenu(false);
+  }
 
   return (
     <header>
@@ -14,20 +20,20 @@ function Nav() {
           <img src={logo} alt="the Lodge logo" className="h-20 ml-4" />
         </a>
         <nav className="hidden lg:flex bg-white h-full justify-between items-center text-center text-lg text-gray-500 font-medium">
-          <a href="/#landing" className="mx-4">Start Here</a>
-          <a href="/#case-study" className="mx-4">Case Study</a>
-          <a href="/#presentation" className="mx-4">Presentation</a>
-          <a href="/#our-team" className="mx-4">Our Team</a>
+          <button className="mx-4" onClick={() => navigateTo("landing")}>Start Here</button>
+          <button className="mx-4" onClick={() => navigateTo("case-study")}>Case Study</button>
+          <button className="mx-4" onClick={() => navigateTo("presentation")}>Presentation</button>
+          <button className="mx-4" onClick={() => navigateTo("our-team")}>Our Team</button>
           <a href="/lodge-docs" className="mx-4">Docs</a>
           <a href="https://github.com/lodge-logging/Lodge" className="mx-4 w-20"><img src={icon} className="w-full h-10" alt="The github logo" /></a>
         </nav>
         <img src={menuIcon} alt="a dropdown menu icon" className="lg:hidden block w-8 h-8 mr-6" onClick={() => setShowMenu(!showMenu)} />
       </div>
       <div id="mobile-menu" className={`lg:hidden ${showMenu ? "translate-y-20" : "-translate-y-full"} z-0 bg-white fixed flex flex-col text-xl text-gray-800 w-full gap-1 transform transition duration-500 ease-in-out`}>
-        <a href="/#landing" className={`${navItemStyle} mt-1`}>Start Here</a>
-        <a href="/#case-study" className={navItemStyle}>Case Study</a>
-        <a href="/#presentation" className={navItemStyle}>Presentation</a>
-        <a href="/#our-team" className={navItemStyle}>Our Team</a>
+        <button onClick={() => navigateTo("landing")} className={`${navItemStyle} mt-1`}>Start Here</button>
+        <button onClick={() => navigateTo("case-study")} className={navItemStyle}>Case Study</button>
+        <button onClick={() => navigateTo("presentation")} className={navItemStyle}>Presentation</button>
+        <button onClick={() => navigateTo("our-team")} className={navItemStyle}>Our Team</button>
         <a href="/lodge-docs" className={navItemStyle}>Docs</a>
         <a href="https://github.com/lodge-logging/Lodge" className={`${navItemStyle} mb-1`}><i className=""></i> GitHub</a>
       </div>
