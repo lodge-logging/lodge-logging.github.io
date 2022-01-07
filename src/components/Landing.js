@@ -12,10 +12,10 @@ function Landing() {
           <div className="text-center items-center justify-center bg-raisin xl:w-6/12 xl:flex xl:flex-col xl:h-screen">
             <h1 className="hidden xl:block text-9xl font-extrabold mt-52">Lodge</h1>
             <p className="light-text text-gray-300 text-3xl leading-snug text-center mt-8 px-8 mx-auto max-w-xl">
-              An open-source framework that provides <span className="text-cyan font-medium">realtime infrastructure</span> and </p>
-            <p className="text-yellowgreen font-medium text-3xl leading-snug text-center px-8 mx-auto max-w-xl">in-transit message processing</p>
-            <p className="mb-20 light-text text-gray-300 text-3xl leading-snug text-center font-medium max-w-xl mx-auto px-8">
-              for web applications.
+              An open-source <span className="text-cyan font-medium">self-managed</span></p>
+            <p className="text-yellowgreen font-medium text-3xl leading-snug text-center px-8 mx-auto max-w-xl">logging observability</p>
+            <p className="light-text text-gray-300 text-3xl leading-snug text-center font-medium max-w-xl mx-auto px-8">
+              framework for small to medium-sized microservice web applications
             </p>
           </div>
         </div>

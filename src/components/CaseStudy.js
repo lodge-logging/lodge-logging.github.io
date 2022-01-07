@@ -834,7 +834,7 @@ function CaseStudy() {
             className={imgStyle}
           />
           <p className={paragraphStyle}>
-            The solution the Elastic team recommends for this problem is to use
+            A common solution for this problem is to use
             a data buffer so Logstash can pull log data off the end of the queue
             at its own pace, regardless of the rate at which the logs are
             generated.
