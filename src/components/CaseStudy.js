@@ -47,11 +47,8 @@ function CaseStudy() {
   return (
     <div className="flex">
       <CaseStudyNav />
-      <div className="xl:w-4/5 xl:pt-0">
-        <div
-          id="case-study"
-          className="prose ml-6 leading-9 w-10/12 text-left text-gray-700 text-xl"
-        >
+      <div id="case-study" className="xl:w-4/5 xl:pt-0">
+        <div className="prose ml-6 leading-9 w-10/12 text-left text-gray-700 text-xl">
           <h1 className="mt-24 mb-16 text-6xl font-black">Case Study</h1>
           {/* <!-- Section 1 --> */}
           <h2 id="section-1" className={headerStyle}>
@@ -596,7 +593,7 @@ function CaseStudy() {
             topics, performs parsing and transformation, and sends logs to two
             different storage components in Lodge.
           </p>
-          <h3 className={subHeaderStyle}>
+          <h3 id="section-4-6" className={subHeaderStyle}>
             4.6 Elasticsearch and Amazon S3 for Storage
           </h3>
           <p className={paragraphStyle}>
@@ -626,7 +623,7 @@ function CaseStudy() {
             purpose, we built an application to retrieve data from S3 and
             re-index it back into Elasticsearch.
           </p>
-          <h3 id="section-4-6" className={subHeaderStyle}>
+          <h3 id="section-4-7" className={subHeaderStyle}>
             4.7 Kibana for Querying and Visualization
           </h3>
           <p className={paragraphStyle}>
@@ -645,7 +642,7 @@ function CaseStudy() {
             without worrying about losing data - and this convenience comes
             without the hassle of managing a separate database.
           </p>
-          <h3 className={subHeaderStyle}>
+          <h3 id="section-4-8" className={subHeaderStyle}>
             4.8 Lodge Dashboard for Everything Else
           </h3>
           <p className={paragraphStyle}>
@@ -1148,7 +1145,7 @@ function CaseStudy() {
             directly and insert them into their configuration before they
             deploy.
           </p>
-          <h2 className={headerStyle}>8. Future Work</h2>
+          <h2 id="section-8" className={headerStyle}>8. Future Work</h2>
           <p className={`${paragraphStyle} mb-24`}>
             There’s still more work we have left to do on Lodge to make it
             suitable for more use cases and relieve more of the user’s
