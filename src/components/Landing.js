@@ -4,7 +4,7 @@ import fullDiagram from "../images/diagrams/full_diagram.png";
 
 function Landing() {
   return (
-    <div id="landing" className="text-white">
+    <div id="landing" className="text-white flex flex-col flex-nowrap">
       <div className="flex flex-col justify-center items-center pt-28 bg-raisin xl:py-0">
         <div className="w-full h-landing xl:h-screen xl:flex">
           <div className="hidden xl:block bg-white bgImageFirst w-1/2" />
@@ -34,9 +34,9 @@ function Landing() {
           <img src={initGif} alt="Lodge initialization gif" className="mx-auto rounded-lg shadow-xl" />
         </div>
       </div>
-      <div className="xl:hidden flex flex-col h-landing justify-center items-center text-center bg-cyan py-20 px-12">
+      <div className="xl:hidden flex flex-col h-landing-mobile justify-center items-center text-center bg-cyan py-20 px-4">
         <h2 className="text-4xl font-extrabold">Ready to Deploy</h2>
-        <p className="text-3xl my-10 px-16 max-w-5xl">
+        <p className="text-3xl my-10 px-6 max-w-5xl">
           Lodge provides an opinionated pre-configuration of open-source tools
           that deploy automatically to a user's AWS account
         </p>
@@ -52,9 +52,9 @@ function Landing() {
           <img src={fullDiagram} alt="Lodge diagram" className="mx-auto rounded-lg shadow-xl" />
         </div>
       </div>
-      <div className="xl:hidden flex flex-col h-landing justify-center items-center text-center bg-yellowgreen py-20 px-12">
+      <div className="xl:hidden flex flex-col h-landing-mobile justify-center items-center text-center bg-yellowgreen py-20 px-4">
         <h2 className="text-4xl font-extrabold">Available and Resilient</h2>
-        <p className="text-3xl my-10 px-16 max-w-5xl">
+        <p className="text-3xl my-10 px-6 max-w-5xl">
           Lodge is optimized for <b>availability</b> in the event of datacenter outages,
           and <b>resiliency</b> against sudden bursts in log traffic
         </p>
