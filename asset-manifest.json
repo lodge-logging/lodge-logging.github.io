@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e182b09.chunk.css",
-    "main.js": "/static/js/main.672522aa.chunk.js",
-    "main.js.map": "/static/js/main.672522aa.chunk.js.map",
+    "main.css": "/static/css/main.292702d5.chunk.css",
+    "main.js": "/static/js/main.a69d201e.chunk.js",
+    "main.js.map": "/static/js/main.a69d201e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.27a510cb.js",
     "runtime-main.js.map": "/static/js/runtime-main.27a510cb.js.map",
     "static/js/2.f6201800.chunk.js": "/static/js/2.f6201800.chunk.js",
     "static/js/2.f6201800.chunk.js.map": "/static/js/2.f6201800.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.4e182b09.chunk.css.map": "/static/css/main.4e182b09.chunk.css.map",
+    "static/css/main.292702d5.chunk.css.map": "/static/css/main.292702d5.chunk.css.map",
     "static/js/2.f6201800.chunk.js.LICENSE.txt": "/static/js/2.f6201800.chunk.js.LICENSE.txt",
     "static/media/ES-cluster.f05d5b9e.png": "/static/media/ES-cluster.f05d5b9e.png",
     "static/media/index.css": "/static/media/Lodge_graphic_green.9ffa49f2.svg",
     "static/media/Lodge_graphic_mono_color.b0914d10.svg": "/static/media/Lodge_graphic_mono_color.b0914d10.svg",
-    "static/media/Lodge_logo_sm_txt.2515ce06.svg": "/static/media/Lodge_logo_sm_txt.2515ce06.svg",
+    "static/media/Lodge_landing.d0cf1755.svg": "/static/media/Lodge_landing.d0cf1755.svg",
     "static/media/buffering-options.8c2fdae8.png": "/static/media/buffering-options.8c2fdae8.png",
     "static/media/bursty-logs.ecd7f5c6.gif": "/static/media/bursty-logs.ecd7f5c6.gif",
     "static/media/buying-options.72dec619.png": "/static/media/buying-options.72dec619.png",
@@ -59,7 +59,7 @@
   "entrypoints": [
     "static/js/runtime-main.27a510cb.js",
     "static/js/2.f6201800.chunk.js",
-    "static/css/main.4e182b09.chunk.css",
-    "static/js/main.672522aa.chunk.js"
+    "static/css/main.292702d5.chunk.css",
+    "static/js/main.a69d201e.chunk.js"
   ]
 }
