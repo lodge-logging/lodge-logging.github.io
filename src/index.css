@@ -55,7 +55,13 @@ h6 {
   }
 
   .h-landing {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 300px);
+    min-height: 850px;
+  }
+
+  .h-landing-mobile {
+    height: calc(100vh - 200px);
+    min-height: 850px;
   }
 
   .text-landing {
