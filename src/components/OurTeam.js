@@ -29,7 +29,7 @@ const teamMembers = [
     name: "Sam Clark",
     location: "Dallas, TX",
     email: "clarksam19@gmail.com",
-    linkedin: "https://www.linkedin.com/in/sam-clark-0aa74390",
+    linkedin: "https://www.linkedin.com/in/sam-clark-dev",
     github: "https://github.com/clarksam19",
     website: "https://samclark.dev/",
   },
