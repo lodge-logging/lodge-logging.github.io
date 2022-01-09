@@ -54,6 +54,14 @@ h6 {
     padding-left: 400px;
   }
 
+  .h-landing {
+    height: calc(100vh - 150px);
+  }
+
+  .text-landing {
+    font-size: 8.8rem;
+  }
+
   .w-member {
     width: calc(50% - 4rem);
   }
@@ -67,7 +75,7 @@ h6 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 20%;
-    background-position: calc(50% / 3) calc(50% + 2rem);
+    background-position: calc(55% / 3) calc(50% + 2rem);
   }
 
   .bgImageSecond {
@@ -75,7 +83,7 @@ h6 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 20%;
-    background-position: calc(50% / 3) calc(50% + 2rem);
+    background-position: calc(55% / 3) calc(50% + 2rem);
   }
 
   .bgImageThird {
@@ -83,6 +91,6 @@ h6 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 20%;
-    background-position: calc(50% / 3) calc(50% + 2rem);
+    background-position: calc(55% / 3) calc(50% + 2rem);
   }
 }

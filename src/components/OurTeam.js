@@ -11,7 +11,7 @@ const teamMembers = [
     name: "Regina Donovan",
     location: "Atlanta, GA",
     email: "reginadonovan191@gmail.com",
-    linkedin: "https://www.linkedin.com/in/regina-donovan-82242040/",
+    linkedin: "https://www.linkedin.com/in/rg-donovan/",
     github: "https://github.com/rgdonovan",
     website: ""
   },
@@ -39,7 +39,8 @@ const teamMembers = [
     location: "San Francisco, CA",
     email: "ranadeeb92@gmail.com",
     linkedin: "www.linkedin.com/in/rana-deeb/",
-    github: "github.com/ranadeeb92"
+    github: "github.com/ranadeeb92",
+    website: "www.ranadeeb.dev"
   }
 ];
 
