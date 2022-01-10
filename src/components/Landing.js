@@ -34,8 +34,8 @@ function Landing() {
           <img src={initGif} alt="Lodge initialization gif" className="mx-auto rounded-lg shadow-xl" />
         </div>
       </div>
-      <div className="xl:hidden flex flex-col h-landing-mobile justify-center items-center text-center bg-cyan py-20 px-4">
-        <h2 className="text-4xl font-extrabold">Ready to Deploy</h2>
+      <div className="xl:hidden flex flex-col h-landing justify-center items-center text-center bg-cyan px-4">
+        <h2 className="text-4xl font-extrabold mt-56">Ready to Deploy</h2>
         <p className="text-3xl my-10 px-6 max-w-5xl">
           Lodge provides an opinionated pre-configuration of open-source tools
           that deploy automatically to a user's AWS account
@@ -52,7 +52,7 @@ function Landing() {
           <img src={fullDiagram} alt="Lodge diagram" className="mx-auto rounded-lg shadow-xl" />
         </div>
       </div>
-      <div className="xl:hidden flex flex-col h-landing-mobile justify-center items-center text-center bg-yellowgreen py-20 px-4">
+      <div className="xl:hidden flex flex-col h-landing justify-center items-center text-center bg-yellowgreen py-20 px-4">
         <h2 className="text-4xl font-extrabold">Available and Resilient</h2>
         <p className="text-3xl my-10 px-6 max-w-5xl">
           Lodge is optimized for <b>availability</b> in the event of datacenter outages,
