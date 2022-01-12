@@ -13,7 +13,7 @@ const teamMembers = [
     email: "reginadonovan191@gmail.com",
     linkedin: "https://www.linkedin.com/in/rg-donovan/",
     github: "https://github.com/rgdonovan",
-    website: ""
+    website: "https://rgdonovan.github.io/"
   },
   {
     image: justin,
@@ -22,7 +22,7 @@ const teamMembers = [
     email: "justinkevinhl@gmail.com",
     linkedin: "https://www.linkedin.com/in/justinkevinheilo/",
     github: "https://github.com/justinnnlo",
-    website: ""
+    website: "https://www.justinlo.dev "
   },
   {
     image: sam,
@@ -39,8 +39,8 @@ const teamMembers = [
     location: "San Francisco, CA",
     email: "ranadeeb92@gmail.com",
     linkedin: "www.linkedin.com/in/rana-deeb/",
-    github: "github.com/ranadeeb92",
-    website: "www.ranadeeb.dev"
+    github: "https://github.com/ranadeeb92",
+    website: "https://www.ranadeeb.dev/"
   }
 ];
 

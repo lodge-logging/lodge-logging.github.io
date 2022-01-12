@@ -35,19 +35,17 @@ function CaseStudy() {
   const subHeaderStyle = "text-2xl font-bold mt-16 mb-4";
   const subSubHeaderStyle = "text-xl font-bold mt-12 mb-4";
   const paragraphStyle = "my-5";
-  const listDiscStyle =
-    "list-outside list-disc text-gray-300 text-2xl items-center";
+  const listDiscStyle = "list-outside list-disc text-gray-300 text-2xl items-center";
   const listNumStyle = "list-outside list-decimal text-2xl items-center";
   const listTextStyle = "inline text-raisin text-xl";
   const listElementStyle = "ml-7";
   const imgStyle = "mx-auto my-8 rounded-lg";
   const linkStyle = "underline text-blue-500";
-  // const quoteStyle = "border-l-4 border-grey-200 pl-4 italic text-raisin";
 
   return (
     <div className="flex">
       <CaseStudyNav />
-      <div id="case-study" className="xl:w-4/5 xl:pt-0">
+      <div id="case-study" className="w-full xl:w-4/5 xl:pt-0">
         <div className="prose ml-6 leading-9 w-10/12 text-left text-gray-700 text-xl">
           <h1 className="mt-24 mb-16 text-6xl font-black">Case Study</h1>
           {/* <!-- Section 1 --> */}

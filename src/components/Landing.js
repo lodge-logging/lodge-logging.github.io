@@ -4,7 +4,7 @@ import fullDiagram from "../images/diagrams/full_diagram.png";
 
 function Landing() {
   return (
-    <div id="landing" className="text-white flex flex-col flex-nowrap">
+    <div id="landing" className="text-white flex flex-col">
       <div className="flex flex-col justify-center items-center pt-28 bg-raisin xl:py-0">
         <div className="w-full h-landing xl:h-screen xl:flex">
           <div className="hidden xl:block bg-white bgImageFirst w-1/2" />
