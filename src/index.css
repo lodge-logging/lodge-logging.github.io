@@ -38,18 +38,6 @@ h6 {
     padding: 0 0 0 25%;
   }
 
-  .h-video {
-    height: calc(100vh - 4rem);
-  }
-
-  .max-h-video {
-    max-height: 304px;
-  }
-
-  .max-w-video {
-    max-width: calc(100% - 2rem);
-  }
-
   .w-sm-side-nav {
     width: 310px;
   }
@@ -106,5 +94,11 @@ h6 {
     background-attachment: fixed;
     background-size: 20%;
     background-position: calc(55% / 3) calc(50% + 2rem);
+  }
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
   }
 }

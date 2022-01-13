@@ -20,22 +20,22 @@ function Nav() {
           <img src={logo} alt="the Lodge logo" className="h-20 ml-4" />
         </a>
         <nav className="hidden lg:flex bg-white h-full justify-between items-center text-center text-lg text-gray-500 font-medium">
-          <button className="mx-4" onClick={() => navigateTo("landing")}>Start Here</button>
-          <button className="mx-4" onClick={() => navigateTo("case-study")}>Case Study</button>
-          <button className="mx-4" onClick={() => navigateTo("presentation")}>Presentation</button>
-          <button className="mx-4" onClick={() => navigateTo("our-team")}>Our Team</button>
-          <a href="/lodge-docs" className="mx-4">Docs</a>
+          <button className="mx-4 hover:text-raisin" onClick={() => navigateTo("landing")}>Start Here</button>
+          <button className="mx-4 hover:text-raisin" onClick={() => navigateTo("case-study")}>Case Study</button>
+          <button className="mx-4 hover:text-raisin" onClick={() => navigateTo("presentation")}>Presentation</button>
+          <button className="mx-4 hover:text-raisin" onClick={() => navigateTo("our-team")}>Our Team</button>
+          <a href="/lodge-docs" className="mx-4 hover:text-raisin">Docs</a>
           <a href="https://github.com/lodge-logging/Lodge" className="mx-4 w-20"><img src={icon} className="w-full h-10" alt="The github logo" /></a>
         </nav>
         <img src={menuIcon} alt="a dropdown menu icon" className="lg:hidden block w-8 h-8 mr-6" onClick={() => setShowMenu(!showMenu)} />
       </div>
       <div id="mobile-menu" className={`lg:hidden ${showMenu ? "translate-y-20" : "-translate-y-full"} z-0 bg-white fixed flex flex-col text-xl text-gray-800 w-full gap-1 transform transition duration-500 ease-in-out`}>
-        <button onClick={() => navigateTo("landing")} className={`${navItemStyle} mt-1`}>Start Here</button>
-        <button onClick={() => navigateTo("case-study")} className={navItemStyle}>Case Study</button>
-        <button onClick={() => navigateTo("presentation")} className={navItemStyle}>Presentation</button>
-        <button onClick={() => navigateTo("our-team")} className={navItemStyle}>Our Team</button>
-        <a href="/lodge-docs" className={navItemStyle}>Docs</a>
-        <a href="https://github.com/lodge-logging/Lodge" className={`${navItemStyle} mb-1`}><i className=""></i> GitHub</a>
+        <button onClick={() => navigateTo("landing")} className={`${navItemStyle} mt-1 hover:text-raisin`}>Start Here</button>
+        <button onClick={() => navigateTo("case-study")} className={`${navItemStyle} hover:text-raisin`}>Case Study</button>
+        <button onClick={() => navigateTo("presentation")} className={`${navItemStyle} hover:text-raisin`}>Presentation</button>
+        <button onClick={() => navigateTo("our-team")} className={`${navItemStyle} hover:text-raisin`}>Our Team</button>
+        <a href="/lodge-docs" className={`${navItemStyle} hover:text-raisin`}>Docs</a>
+        <a href="https://github.com/lodge-logging/Lodge" className={`${navItemStyle} mb-1 hover:text-raisin`}><i className=""></i> GitHub</a>
       </div>
     </header>
   );

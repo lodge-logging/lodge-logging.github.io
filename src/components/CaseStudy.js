@@ -796,7 +796,7 @@ function CaseStudy() {
           <img
             src={componentReview}
             alt="component overview"
-            className={`${imgStyle} max-w-4xl`}
+            className={`${imgStyle}`}
           />
           <h2 id="section-6" className={headerStyle}>
             6. Desigining and Building Lodge
