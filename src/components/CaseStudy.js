@@ -888,7 +888,7 @@ function CaseStudy() {
               </dd>
             </div>
           </dl>
-          <img src={kafkaInAction} alt="Kafka in action" className={`${imgStyle} h-96`} />
+          <img src={kafkaInAction} alt="Kafka in action" className={`${imgStyle} lg:w-3/4`} />
 
           <h3 id="section-6-2" className={subHeaderStyle}>
             6.2 Amazon S3
