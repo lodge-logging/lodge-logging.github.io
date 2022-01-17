@@ -46,6 +46,10 @@ h6 {
     width: 500px;
   }
 
+  .w-xl-casestudy {
+    width: 1200px;
+  }
+
   .pl-nav {
     padding-left: 400px;
   }
@@ -101,4 +105,16 @@ h6 {
     padding-bottom: 56.25%;
     /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
   }
+}
+
+.current {
+  color: rgb(27, 168, 224);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }

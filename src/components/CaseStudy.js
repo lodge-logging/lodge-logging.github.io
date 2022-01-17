@@ -31,8 +31,8 @@ import zookeeperDependencies from "../images/diagrams/zookeeper-dependencies.png
 import componentReview from "../images/diagrams/component-review.png";
 
 function CaseStudy() {
-  const headerStyle = "text-3xl font-extrabold mt-14 mb-6";
-  const subHeaderStyle = "text-2xl font-bold mt-16 mb-4";
+  const headerStyle = "section text-3xl font-extrabold mt-14 mb-6";
+  const subHeaderStyle = "section text-2xl font-bold mt-16 mb-4";
   const subSubHeaderStyle = "text-xl font-bold mt-12 mb-4";
   const paragraphStyle = "my-5";
   const listDiscStyle = "list-outside list-disc text-gray-300 text-2xl items-center";
@@ -45,11 +45,11 @@ function CaseStudy() {
   return (
     <div className="flex">
       <CaseStudyNav />
-      <div id="case-study" className="w-full xl:w-4/5 xl:pt-0">
+      <div id="case-study" className="w-xl-casestudy xl:pt-0">
         <div className="prose ml-6 leading-9 w-10/12 text-left text-gray-700 text-xl">
           <h1 className="mt-24 mb-16 text-6xl font-black">Case Study</h1>
           {/* <!-- Section 1 --> */}
-          <h2 id="section-1" className={headerStyle}>
+          <h2 id="section-1" data-section="section-1" className={headerStyle}>
             1. Lodge Introduction
           </h2>
           <p className={paragraphStyle}>
@@ -60,11 +60,11 @@ function CaseStudy() {
           </p>
 
           {/* <!-- Section 2 --> */}
-          <h2 id="section-2" className={headerStyle}>
-            2. Hypothetical
+          <h2 id="section-2" data-section="section-2" className={headerStyle}>
+            2. The Need for Observability
           </h2>
           <h3 id="section-2-1" className={subHeaderStyle}>
-            2.1 Boardwalk
+            2.1 Introducing Boardwalk
           </h3>
           <p className={paragraphStyle}>
             Boardwalk is a small but fast-growing online retailer that sells handcrafted board games. Their product has become a massive hit on social media, which has exponentially increased the traffic on their website. It is an exciting time for Boardwalk, but also a challenging one, since their growth will require a complete overhaul of their architecture.
@@ -73,7 +73,7 @@ function CaseStudy() {
             Boardwalk's monolithic codebase has worked great until now, but its growing user base is demanding an increasing number of new features. Their pace of development needs to keep up, and their architecture needs to facilitate this new pace. To do this, they've decided to break up their monolith and migrate to a microservice architecture.
           </p>
 
-          <h3 id="section-2-2" className={subHeaderStyle}>
+          <h3 id="section-2-2" data-section="section-2" className={subHeaderStyle}>
             2.2 Monolith to Microservices
           </h3>
           <p className={paragraphStyle}>
@@ -664,17 +664,14 @@ function CaseStudy() {
 
           {/* <!-- Section 5 --> */}
           <h2 id="section-7" className={headerStyle}>
-            7. Implementation Challenges
+            7. Implementation Challenges: Resolving Circular Dependencies
           </h2>
           <p className={paragraphStyle}>
             In this final section, we're going to discuss a challenge we faced in resolving circular dependencies while automating Lodge's deployment.
           </p>
           <h3 id="section-7-1" className={subHeaderStyle}>
-            7.1 Resolving Circular Dependencies
+            Relying on Values Before They Exist
           </h3>
-          <h4 className={subSubHeaderStyle}>
-            Relying on Values that Don't Exist Yet
-          </h4>
           <p className={paragraphStyle}>
             We used AWS Cloud Development Kit (CDK) to automate Lodge's deployment. CDK is AWS's infrastructure-as-code library that provides a dynamic interface for generating Cloudformation templates, which our team preferred over working with Cloudformation directly.
           </p>
@@ -686,15 +683,15 @@ function CaseStudy() {
           <p className={paragraphStyle}>
             In a CDK application, values used within the application that are unknown until after the infrastructure deploys - values such as instance IDs or IP addresses - are assigned arbitrary tokens until their real values resolve. If a component is dependent on the resolved token value of another component in the same stack, then its deployment will fail. For example, Logstash requires the IP addresses of the Kafka brokers and the Elasticsearch master-eligible nodes to network with them. Errors will arise if these IPs do not exist when generating Logstash's configuration file.
           </p>
-          <h4 className={subSubHeaderStyle}>
+          <h3 id="section-7-2" className={subHeaderStyle}>
             Resolving Values Before Using Them
-          </h4>
+          </h3>
           <p className={paragraphStyle}>
             The solution to this ordinary type of dependency, where one component is dependent on data from another, is simple: separate the components into deployment stages, and deploy them in the order of their dependencies. For example, Logstash can deploy after Kafka and Elasticsearch once their IP addresses resolve and are accessible. We confront a different type of circular dependency, though, when components deploy in clusters.
           </p>
-          <h4 className={subSubHeaderStyle}>
+          <h3 id="section-7-3" className={subHeaderStyle}>
             Relying On Unresolved Values In Clusters
-          </h4>
+          </h3>
           <p className={paragraphStyle}>
             Lodge deploys Zookeeper, Elasticsearch, and Kafka in clusters. Kafka uses Zookeeper's IPs to configure its formation, so we can resolve its dependencies by staging it after Zookeeper's deployment. Unfortunately, the Zookeeper and Elasticsearch clusters require the IP addresses of each of their nodes to form successfully. So, for the Zookeeper cluster to deploy, AWS must first assign each Zookeeper node's IP address to each other Zookeeper node. Yet, AWS can only know these values after deploying each instance. This double-bind scenario is a circular dependency.
           </p>
@@ -706,9 +703,9 @@ function CaseStudy() {
           <p className={paragraphStyle}>
             To resolve this circular dependency, we can remove either the configuration's dependency on IPs or the dependency on AWS to generate and assign the IPs. With Elasticsearch, the former is possible since the Elastic team has created <a href="https://www.elastic.co/guide/en/elasticsearch/plugins/current/discovery-ec2.html" alt="Elasticsearch EC2 Discovery Plugin" className={linkStyle}> a plugin specifically for AWS EC2 instances </a> that replaces the need for user-input IPs with node names and fetches the IPs behind the scenes. Our Zookeeper solution requires the latter option.
           </p>
-          <h4 className={subSubHeaderStyle}>
+          <h3 id="section-7-4" className={subHeaderStyle}>
             Resolving Values Before Using Them: Zookeeper Edition
-          </h4>
+          </h3>
           <p className={paragraphStyle}>
             To deploy the Zookeeper cluster, we must first determine the IP address for each node. To do this, we must dynamically generate each IP based on the CIDR block of the subnets that the cluster deploys in. These CIDR blocks are dependent on how Lodge deploys. For a new VPC, we create new subnets within the CIDR block provided by the user and calculate the first available IPs from there. The task is more straightforward than with an existing VPC, as we can assume that it is empty outside the few IPs reserved by AWS.
           </p>
